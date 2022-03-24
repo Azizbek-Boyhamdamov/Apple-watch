@@ -62,7 +62,8 @@ img{
 
 .button {
   display: inline-block;
-  width: 260px;
+  max-width: 260px;
+  width: 100%;
   padding-top: 12px;
   padding-bottom: 12px;
   border: 0;
@@ -210,12 +211,17 @@ img{
   width: 490px;
 }
 
+
 .lead-cta-heading {
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 50px;
   color: #000;
   line-height: 1.2;
+}
+
+.lead-cta-white .lead-cta-heading{
+  color: #fff;
 }
 
 .lead-cta-text {
@@ -226,6 +232,10 @@ img{
   color: var(--common-font-color);
 }
 
+.lead-cta-white .lead-cta-text{
+  color: #fff;
+  border-color: #fff;
+}
 
 /* FEATURE */
 
@@ -266,7 +276,37 @@ img{
   32px 0 0 #ddd;
 }
 
+/* PROMO */
 
+.promo {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.promo-img {
+  display: block;
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+
+/* RUNNERS */
+
+.runners {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  background-image: url("../img/runners-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.runners-lead-cta {
+  margin-left: auto;
+}
 
 
 
