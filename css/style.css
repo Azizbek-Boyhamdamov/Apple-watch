@@ -1,9 +1,11 @@
-/* GLOBAL */
+/* CUSTOM-PROPS */
 
 :root{
   --common-font-color:#777777;
   --accent-font-color:#333333;
 }
+
+/* GLOBAL */
 
 html{
   box-sizing: border-box;
@@ -250,14 +252,17 @@ img{
 .features-list-item {
   width: 280px;
 }
+
 .features-list-item:not(:last-child){
   margin-right: 80px;
 }
+
 .features-list-item-title {
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 18px;
 }
+
 .fetures-list-item-text {
   margin-top: 0;
   margin-bottom: 20px;
@@ -318,5 +323,10 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+  .hero{
+    background-image: url("../img/intro-bg@2x.jpg");
+  }
+  .runners{
+    background-image: url("../img/runners-bg@2x.png");
+  }
 }
